@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.grpcapp;
+
+service APIService {
+    rpc fetchData(RequestData) returns (ResponseData);
+}
+
+message RequestData {
+    // Define request message fields...
+}
+
+message ResponseData {
+    // Define response message fields...
+}
